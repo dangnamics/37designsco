@@ -1,3 +1,256 @@
+$btn-primary: #2e236c;
+$btn-primary-color: #fff;
+
 body {
-  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &.login {
+    background: #dfdee5;
+    font-family: "Inter", sans-serif;
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Inter", sans-serif;
+    }
+    .button {
+      &.button-primary {
+        background: $btn-primary;
+        color: $btn-primary-color;
+      }
+    }
+    #login {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      flex-direction: row-reverse;
+      justify-content: center;
+      padding: 0;
+      h1 {
+        :first-child {
+          display: none;
+        }
+      }
+      .loginSliderContainer {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+
+        .slider,
+        .non-slider {
+          max-width: 598px;
+          height: 632px;
+          .rightImageContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            min-height: 632px;
+            background: url("./../assets/images/rightImageLogin.png");
+            border-radius: 0px 12px 12px 0px;
+          }
+          .foregroundBg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 130px;
+            text-align: center;
+          }
+          .captionContainer {
+            background: #9e51a0;
+            text-align: center;
+            border-radius: 0px 0px 12px 0px;
+            padding: 78px 40px 70px;
+            .captionText {
+              h2 {
+                padding: 0 60px;
+                color: #fff;
+                font-size: 28px;
+                line-height: 36px;
+                font-weight: 400;
+                margin: 8px auto;
+              }
+            }
+            .captionSubText {
+              p {
+                color: #fff;
+                font-size: 16px;
+                line-height: 36px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .formLoginContainer {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+        background: url("./../assets/images/body_bg.png") no-repeat;
+        background-size: cover;
+        .formContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          max-width: 598px;
+          height: 632px;
+          max-height: 632px;
+          width: 100%;
+          background: #fff;
+          border-radius: 12px 0 0 12px;
+
+          #login-message {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-top: 200px;
+            margin-bottom: 152px;
+            border: 1px solid #811eff33;
+            box-shadow: none;
+            border-radius: 6px;
+            background: rgba(129, 30, 255, 0.05);
+            text-align: center;
+            padding: 32px;
+            line-height: 24px;
+            width: 100%;
+            max-width: 465px;
+            h2 {
+              font-size: 20px;
+              margin-bottom: 8px;
+              color: #811eff;
+              font-weight: 400;
+            }
+            p {
+              font-size: 16px;
+              margin-bottom: 8px;
+            }
+            a {
+              text-decoration: none;
+              border-bottom: 1px solid #3c455e;
+              color: #3c455e;
+              font-weight: 700;
+            }
+          }
+          .user-pass-wrap {
+            margin: 48px 0;
+          }
+
+          .notice-error {
+            display: none;
+          }
+          h3 {
+            &.formHeader {
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 28px;
+              color: #3c455e;
+            }
+          }
+          form {
+            &#loginform,
+            &#registerform {
+              max-width: 598px;
+              padding: 48px 98px;
+              margin-top: 0;
+              display: flex;
+              flex-direction: column;
+              border: none;
+              box-shadow: none;
+              .error-pw,
+              #error-username,
+              .error-email {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 28px;
+                color: #f75c0a;
+              }
+              #reg_passmail {
+                display: none;
+              }
+              label {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: left;
+                color: #4f5359;
+              }
+              .submit {
+                margin-top: 48px;
+                input {
+                  margin-bottom: 0;
+                }
+              }
+              input {
+                &:active,
+                &:focus,
+                &:target {
+                  border: none;
+                  border-bottom: solid 3px #000000;
+                  border-radius: 0;
+                  box-shadow: none;
+                }
+
+                max-width: 402px;
+                border: none;
+                border-bottom: solid 1px #afbdcb;
+                border-radius: 0;
+                &#rememberme {
+                  margin-bottom: 0;
+                  border: solid 1px #afbdcb;
+                  box-shadow: none;
+                }
+                &#wp-submit {
+                  width: 402px;
+                  height: 52px;
+                  border-radius: 100px;
+                  font-weight: 700;
+                  &:hover {
+                    background: none;
+                    border: solid 2px #2e236c;
+                    color: #2e236c;
+                  }
+                  &:active,
+                  &:focus {
+                    background: none;
+                    border: solid 3px #2e236c;
+                    color: #2e236c;
+                  }
+                }
+              }
+            }
+          }
+          p {
+            &#nav {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              margin: 0;
+              a {
+                font-weight: 700;
+
+                border-bottom: 1px solid #3c455e;
+              }
+              .wp-login-lost-password {
+                display: none;
+              }
+            }
+            &#backtoblog {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
