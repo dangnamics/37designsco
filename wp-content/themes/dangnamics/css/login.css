@@ -175,7 +175,7 @@ body.login #login .formLoginContainer .formContainer form#loginform label, body.
   color: #4f5359;
 }
 body.login #login .formLoginContainer .formContainer form#loginform .submit, body.login #login .formLoginContainer .formContainer form#registerform .submit {
-  margin-top: 48px;
+  margin: 48px auto;
 }
 body.login #login .formLoginContainer .formContainer form#loginform .submit input, body.login #login .formLoginContainer .formContainer form#registerform .submit input {
   margin-bottom: 0;
