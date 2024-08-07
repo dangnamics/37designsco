@@ -56,7 +56,7 @@ if( have_rows('slider_image_and_caption', 'option') ):
 			echo ' current';
 		 } 
 		echo '">
-				<div class=rightImageContainer style="background:url('. get_sub_field('slider_background_image') . ')  background-repeat:no-repeat;background-size:contain;">
+				<div class=rightImageContainer style="background:url('. get_sub_field('slider_background_image') . ');  background-repeat:no-repeat;background-size:contain;">
 					<div class="foregroundBg">
 						<img src="'. get_sub_field('slider_image') .'">
 					</div>
