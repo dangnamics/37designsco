@@ -56,11 +56,11 @@ if( have_rows('slider_image_and_caption', 'option') ):
 			echo ' current';
 		 } 
 		echo '">
-				<div class=rightImageContainer style="background:url('. get_sub_field('slider_background_image') . ')">
+				<div class=rightImageContainer style="background:url('. get_sub_field('slider_background_image') . ')  background-repeat:no-repeat;background-size:contain;">
 					<div class="foregroundBg">
 						<img src="'. get_sub_field('slider_image') .'">
 					</div>
-					<div class="captionContainer" style="background:'. get_sub_field('caption_background_color') .' background-repeat:no-repeat;background-size:contain;">
+					<div class="captionContainer" style="background:'. get_sub_field('caption_background_color') .'">
 						<div class="captionText"><h2>'. get_sub_field('slider_caption') .'</h2></div>
 						<div class="captionSubText"><p>'. get_sub_field('slider_sub_caption') .'</p></div>
 					</div>
