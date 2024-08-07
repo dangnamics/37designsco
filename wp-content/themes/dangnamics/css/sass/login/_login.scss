@@ -51,6 +51,8 @@ body {
             position: relative;
             min-height: 632px;
             background: url("./../assets/images/rightImageLogin.png");
+            background-repeat: no-repeat;
+            background-size: contain;
             border-radius: 0px 12px 12px 0px;
           }
           .foregroundBg {
