@@ -528,8 +528,12 @@ body.login.login-action-login #login .formLoginContainer .formContainer .user-pa
   body.login #login .formLoginContainer .formContainer form#registerform, body.login #login .formLoginContainer .formContainer form#loginform {
     padding: 0 0 2rem;
   }
+  body.login #login .formLoginContainer .formContainer form#registerform p, body.login #login .formLoginContainer .formContainer form#loginform p {
+    max-width: 340px;
+  }
   body.login #login .formLoginContainer .formContainer form#registerform input, body.login #login .formLoginContainer .formContainer form#loginform input {
     width: 98%;
+    max-width: 340px;
   }
   body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit, body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit {
     width: 98%;

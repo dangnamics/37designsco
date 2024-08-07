@@ -182,9 +182,12 @@ body {
               &#registerform,
               &#loginform {
                 padding: 0 0 2rem;
-
+                p {
+                  max-width: 340px;
+                }
                 input {
                   width: 98%;
+                  max-width: 340px;
                   &#wp-submit {
                     width: 98%;
                   }
