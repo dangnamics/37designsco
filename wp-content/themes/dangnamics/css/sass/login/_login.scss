@@ -151,6 +151,7 @@ body {
           }
           h3 {
             &.formHeader {
+              margin-top: 56px;
               font-size: 24px;
               font-weight: 400;
               line-height: 28px;
@@ -158,8 +159,7 @@ body {
             }
           }
           form {
-            &#loginform,
-            &#registerform {
+            &#loginform {
               max-width: 598px;
               padding: 48px 98px;
               margin-top: 0;
@@ -184,9 +184,11 @@ body {
                 line-height: 28px;
                 text-align: left;
                 color: #4f5359;
+                margin-bottom: 0px;
               }
+
               .submit {
-                margin: 48px auto;
+                margin: 48px auto 0;
                 input {
                   margin-bottom: 0;
                 }
@@ -205,6 +207,92 @@ body {
                 border: none;
                 border-bottom: solid 1px #afbdcb;
                 border-radius: 0;
+                &#user_login {
+                  height: 42px;
+                  margin-bottom: 0;
+                }
+                &#user_pass {
+                  height: 42px;
+                }
+                &#rememberme {
+                  margin-bottom: 0;
+                  border: solid 1px #afbdcb;
+                  box-shadow: none;
+                }
+                &#wp-submit {
+                  width: 402px;
+                  height: 52px;
+                  border-radius: 100px;
+                  font-weight: 700;
+                  &:hover {
+                    background: none;
+                    border: solid 2px #2e236c;
+                    color: #2e236c;
+                  }
+                  &:active,
+                  &:focus {
+                    background: none;
+                    border: solid 3px #2e236c;
+                    color: #2e236c;
+                  }
+                }
+              }
+            }
+            &#registerform {
+              max-width: 598px;
+              padding: 0px 98px 48px;
+              margin-top: 0;
+              display: flex;
+              flex-direction: column;
+              border: none;
+              box-shadow: none;
+              .error-pw,
+              #error-username,
+              .error-email {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 28px;
+                color: #f75c0a;
+              }
+              #reg_passmail {
+                display: none;
+              }
+              label {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: left;
+                color: #4f5359;
+                margin-bottom: 0px;
+                margin-top: 48px;
+              }
+
+              .submit {
+                margin: 48px auto 0;
+                input {
+                  margin-bottom: 0;
+                }
+              }
+              input {
+                &:active,
+                &:focus,
+                &:target {
+                  border: none;
+                  border-bottom: solid 3px #000000;
+                  border-radius: 0;
+                  box-shadow: none;
+                }
+
+                max-width: 402px;
+                border: none;
+                border-bottom: solid 1px #afbdcb;
+                border-radius: 0;
+                &#user_login {
+                  height: 42px;
+                }
+                &#user_pass {
+                  height: 42px;
+                }
                 &#rememberme {
                   margin-bottom: 0;
                   border: solid 1px #afbdcb;
@@ -235,7 +323,7 @@ body {
               font-size: 16px;
               font-weight: 400;
               line-height: 24px;
-              margin: 0;
+              margin: 0 0 58px;
               a {
                 font-weight: 700;
 
@@ -247,6 +335,17 @@ body {
             }
             &#backtoblog {
               display: none;
+            }
+          }
+        }
+      }
+    }
+    &.login-action-login {
+      #login {
+        .formLoginContainer {
+          .formContainer {
+            .user-pass-wrap {
+              margin: 48px 0 0;
             }
           }
         }

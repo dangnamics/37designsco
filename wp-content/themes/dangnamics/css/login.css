@@ -140,12 +140,13 @@ body.login #login .formLoginContainer .formContainer .notice-error {
   display: none;
 }
 body.login #login .formLoginContainer .formContainer h3.formHeader {
+  margin-top: 56px;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   color: #3c455e;
 }
-body.login #login .formLoginContainer .formContainer form#loginform, body.login #login .formLoginContainer .formContainer form#registerform {
+body.login #login .formLoginContainer .formContainer form#loginform {
   max-width: 598px;
   padding: 48px 98px;
   margin-top: 0;
@@ -156,7 +157,79 @@ body.login #login .formLoginContainer .formContainer form#loginform, body.login 
 }
 body.login #login .formLoginContainer .formContainer form#loginform .error-pw,
 body.login #login .formLoginContainer .formContainer form#loginform #error-username,
-body.login #login .formLoginContainer .formContainer form#loginform .error-email, body.login #login .formLoginContainer .formContainer form#registerform .error-pw,
+body.login #login .formLoginContainer .formContainer form#loginform .error-email {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #f75c0a;
+}
+body.login #login .formLoginContainer .formContainer form#loginform #reg_passmail {
+  display: none;
+}
+body.login #login .formLoginContainer .formContainer form#loginform label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #4f5359;
+  margin-bottom: 0px;
+}
+body.login #login .formLoginContainer .formContainer form#loginform .submit {
+  margin: 48px auto 0;
+}
+body.login #login .formLoginContainer .formContainer form#loginform .submit input {
+  margin-bottom: 0;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input {
+  max-width: 402px;
+  border: none;
+  border-bottom: solid 1px #afbdcb;
+  border-radius: 0;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input:active, body.login #login .formLoginContainer .formContainer form#loginform input:focus, body.login #login .formLoginContainer .formContainer form#loginform input:target {
+  border: none;
+  border-bottom: solid 3px #000000;
+  border-radius: 0;
+  box-shadow: none;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input#user_login {
+  height: 42px;
+  margin-bottom: 0;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input#user_pass {
+  height: 42px;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input#rememberme {
+  margin-bottom: 0;
+  border: solid 1px #afbdcb;
+  box-shadow: none;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit {
+  width: 402px;
+  height: 52px;
+  border-radius: 100px;
+  font-weight: 700;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit:hover {
+  background: none;
+  border: solid 2px #2e236c;
+  color: #2e236c;
+}
+body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit:active, body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit:focus {
+  background: none;
+  border: solid 3px #2e236c;
+  color: #2e236c;
+}
+body.login #login .formLoginContainer .formContainer form#registerform {
+  max-width: 598px;
+  padding: 0px 98px 48px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  box-shadow: none;
+}
+body.login #login .formLoginContainer .formContainer form#registerform .error-pw,
 body.login #login .formLoginContainer .formContainer form#registerform #error-username,
 body.login #login .formLoginContainer .formContainer form#registerform .error-email {
   font-size: 14px;
@@ -164,51 +237,59 @@ body.login #login .formLoginContainer .formContainer form#registerform .error-em
   line-height: 28px;
   color: #f75c0a;
 }
-body.login #login .formLoginContainer .formContainer form#loginform #reg_passmail, body.login #login .formLoginContainer .formContainer form#registerform #reg_passmail {
+body.login #login .formLoginContainer .formContainer form#registerform #reg_passmail {
   display: none;
 }
-body.login #login .formLoginContainer .formContainer form#loginform label, body.login #login .formLoginContainer .formContainer form#registerform label {
+body.login #login .formLoginContainer .formContainer form#registerform label {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
   color: #4f5359;
+  margin-bottom: 0px;
+  margin-top: 48px;
 }
-body.login #login .formLoginContainer .formContainer form#loginform .submit, body.login #login .formLoginContainer .formContainer form#registerform .submit {
-  margin: 48px auto;
+body.login #login .formLoginContainer .formContainer form#registerform .submit {
+  margin: 48px auto 0;
 }
-body.login #login .formLoginContainer .formContainer form#loginform .submit input, body.login #login .formLoginContainer .formContainer form#registerform .submit input {
+body.login #login .formLoginContainer .formContainer form#registerform .submit input {
   margin-bottom: 0;
 }
-body.login #login .formLoginContainer .formContainer form#loginform input, body.login #login .formLoginContainer .formContainer form#registerform input {
+body.login #login .formLoginContainer .formContainer form#registerform input {
   max-width: 402px;
   border: none;
   border-bottom: solid 1px #afbdcb;
   border-radius: 0;
 }
-body.login #login .formLoginContainer .formContainer form#loginform input:active, body.login #login .formLoginContainer .formContainer form#loginform input:focus, body.login #login .formLoginContainer .formContainer form#loginform input:target, body.login #login .formLoginContainer .formContainer form#registerform input:active, body.login #login .formLoginContainer .formContainer form#registerform input:focus, body.login #login .formLoginContainer .formContainer form#registerform input:target {
+body.login #login .formLoginContainer .formContainer form#registerform input:active, body.login #login .formLoginContainer .formContainer form#registerform input:focus, body.login #login .formLoginContainer .formContainer form#registerform input:target {
   border: none;
   border-bottom: solid 3px #000000;
   border-radius: 0;
   box-shadow: none;
 }
-body.login #login .formLoginContainer .formContainer form#loginform input#rememberme, body.login #login .formLoginContainer .formContainer form#registerform input#rememberme {
+body.login #login .formLoginContainer .formContainer form#registerform input#user_login {
+  height: 42px;
+}
+body.login #login .formLoginContainer .formContainer form#registerform input#user_pass {
+  height: 42px;
+}
+body.login #login .formLoginContainer .formContainer form#registerform input#rememberme {
   margin-bottom: 0;
   border: solid 1px #afbdcb;
   box-shadow: none;
 }
-body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit, body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit {
+body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit {
   width: 402px;
   height: 52px;
   border-radius: 100px;
   font-weight: 700;
 }
-body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit:hover, body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit:hover {
+body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit:hover {
   background: none;
   border: solid 2px #2e236c;
   color: #2e236c;
 }
-body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit:active, body.login #login .formLoginContainer .formContainer form#loginform input#wp-submit:focus, body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit:active, body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit:focus {
+body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit:active, body.login #login .formLoginContainer .formContainer form#registerform input#wp-submit:focus {
   background: none;
   border: solid 3px #2e236c;
   color: #2e236c;
@@ -217,7 +298,7 @@ body.login #login .formLoginContainer .formContainer p#nav {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0;
+  margin: 0 0 58px;
 }
 body.login #login .formLoginContainer .formContainer p#nav a {
   font-weight: 700;
@@ -228,6 +309,9 @@ body.login #login .formLoginContainer .formContainer p#nav .wp-login-lost-passwo
 }
 body.login #login .formLoginContainer .formContainer p#backtoblog {
   display: none;
+}
+body.login.login-action-login #login .formLoginContainer .formContainer .user-pass-wrap {
+  margin: 48px 0 0;
 }
 
 .slider {
